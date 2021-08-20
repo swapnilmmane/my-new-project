@@ -9,6 +9,7 @@ export interface CarManufacturerEntity {
     id: string;
     title: string;
     description?: string;
+    isPopular?: boolean;
     createdOn: string;
     savedOn: string;
     createdBy: Pick<SecurityIdentity, "id" | "displayName" | "type">;

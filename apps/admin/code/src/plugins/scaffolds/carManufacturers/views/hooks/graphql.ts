@@ -6,6 +6,7 @@ export const CAR_MANUFACTURER_FIELDS_FRAGMENT = /* GraphQL */ `
         id
         title
         description
+        isPopular
         createdOn
         savedOn
         createdBy {

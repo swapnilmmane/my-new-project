@@ -17,6 +17,7 @@ export default new Entity<CarManufacturerEntity>({
         id: { type: "string" },
         title: { type: "string" },
         description: { type: "string" },
+        isPopular: { type: "boolean" },
         createdOn: { type: "string" },
         savedOn: { type: "string" },
         createdBy: { type: "map" },

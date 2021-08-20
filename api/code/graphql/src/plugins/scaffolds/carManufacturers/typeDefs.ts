@@ -3,6 +3,7 @@ export default /* GraphQL */ `
         id: ID!
         title: String!
         description: String
+        isPopular: Boolean
         createdOn: DateTime!
         savedOn: DateTime!
         createdBy: CarManufacturerCreatedBy
@@ -17,11 +18,13 @@ export default /* GraphQL */ `
     input CarManufacturerCreateInput {
         title: String!
         description: String
+        isPopular: Boolean
     }
 
     input CarManufacturerUpdateInput {
         title: String
         description: String
+        isPopular: Boolean
     }
 
     type CarManufacturersListMeta {

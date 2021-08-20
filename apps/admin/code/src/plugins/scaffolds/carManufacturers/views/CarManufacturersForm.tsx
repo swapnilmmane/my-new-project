@@ -14,6 +14,7 @@ import {
     SimpleFormHeader
 } from "@webiny/app-admin/components/SimpleForm";
 import { useCarManufacturersForm } from "./hooks/useCarManufacturersForm";
+import { Switch } from "@webiny/ui/Switch";
 
 /**
  * Renders a form which enables creating new or editing existing Car Manufacturer entries.
@@ -71,6 +72,15 @@ const CarManufacturersForm = () => {
                                     />
                                 </Bind>
                             </Cell>
+                            <Cell span={12}>
+                            <Bind
+                                name="isPopular">
+                                <Switch
+                                    label={"Popular Car Manufacturer"}
+                                    description={"Is this car manufacturer popular?"}
+                                />
+                            </Bind>
+                        </Cell>
                         </Grid>
                     </SimpleFormContent>
                     <SimpleFormFooter>
