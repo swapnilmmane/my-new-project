@@ -17,6 +17,7 @@
   "devDependencies": {
     "@webiny/cli": "^5.14.0",
     "@webiny/cli-plugin-deploy-pulumi": "^5.14.0",
-    "@webiny/project-utils": "^5.14.0"
+    "@webiny/project-utils": "^5.14.0",
+    "graphql-request": "^3.4.0"
   }
 }
