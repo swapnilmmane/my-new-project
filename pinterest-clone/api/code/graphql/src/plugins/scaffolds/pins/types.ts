@@ -9,6 +9,7 @@ export interface PinEntity {
     id: string;
     title: string;
     description?: string;
+    coverImage?: string;
     createdOn: string;
     savedOn: string;
     // createdBy: Pick<SecurityIdentity, "id" | "displayName" | "type">;
