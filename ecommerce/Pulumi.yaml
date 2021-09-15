@@ -1,4 +1,0 @@
-name: eCommerce
-runtime: nodejs
-description: Represents cloud infrastructure needed for hosting the "ECommerce" React application.
-main: pulumi/
