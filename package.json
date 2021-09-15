@@ -69,7 +69,8 @@
 			"api/code/prerenderingService/flush",
 			"api/code/prerenderingService/queue/*",
 			"pinterest-clone/api/code/graphql",
-			"pinterest-clone/app/code"
+			"pinterest-clone/app/code",
+			"ecommerce/code"
 		]
 	},
 	"scripts": {
