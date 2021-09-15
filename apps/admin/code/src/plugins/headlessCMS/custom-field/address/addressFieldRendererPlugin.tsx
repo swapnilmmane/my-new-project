@@ -1,3 +1,5 @@
+import React from "react";
+
 import { CmsEditorFieldRendererPlugin } from "@webiny/app-headless-cms/types";
 
 const AddressSearch = () => <input />;
