@@ -56,6 +56,9 @@ import welcomeScreenWidget from "@webiny/app-headless-cms/admin/plugins/welcomeS
 
 import richTextEditor from "./headlessCMS/richTextEditor";
 
+import addressFieldPlugin from "./headlessCMS/custom-field/address/addressFieldPlugin";
+import addressFieldRendererPlugin from "./headlessCMS/custom-field/address/addressFieldRendererPlugin";
+
 export default [
     headlessCmsPlugins(),
     richTextEditor,
@@ -108,5 +111,7 @@ export default [
     editorUpperCaseFieldValidator,
     welcomeScreenWidget,
     objectField,
-    objectFieldRenderer
+    objectFieldRenderer,
+    addressFieldPlugin(),
+    addressFieldRendererPlugin()
 ];

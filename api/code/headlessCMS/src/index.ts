@@ -16,6 +16,10 @@ import elasticsearchDataGzipCompression from "@webiny/api-elasticsearch/plugins/
 // Imports plugins created via scaffolding utilities.
 import scaffoldsPlugins from "./plugins/scaffolds";
 
+import addressFieldPlugin from "./plugins/custom-field/address/addressFieldPlugin";
+import addressFieldStoragePlugin from "./plugins/custom-field/address/addressFieldStoragePlugin";
+import addressFieldIndexPlugin from "./plugins/custom-field/address/addressFieldIndexPlugin";
+
 const debug = process.env.DEBUG === "true";
 
 export const handler = createHandler({
@@ -42,6 +46,9 @@ export const handler = createHandler({
         headlessCmsDynamoDbElasticStorageOperation(),
         scaffoldsPlugins(),
         elasticsearchDataGzipCompression()
+        // addressFieldPlugin()
+        // addressFieldStoragePlugin(),
+        // addressFieldIndexPlugin()
     ],
     http: { debug }
 });
