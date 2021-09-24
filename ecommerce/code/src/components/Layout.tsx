@@ -1,46 +1,41 @@
 import React from "react";
-import transparentBackground from "~/images/inner-transparent-bg.svg";
+import { Divider, Image } from "antd";
 import { Link } from "@webiny/react-router";
+import logo from "~/images/webiny-orange-icon.png";
 
-interface Props {
-    children: React.ReactNode;
-    className?: string;
-}
+type Props = { className: string };
 
 /**
  * The default layout component which you can use on any page.
  * Feel free to customize it or create additional layout components.
  */
-export default function Layout(props: Props) {
+function ImageDemo() {
     return (
-        <div className={"layout"}>
-            <div className={"menu"}>
-                <ul>
-                    <li>
-                        <Link to={"/"}>Home</Link>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a
-                            target="_blank"
-                            rel={"noreferrer"}
-                            href={"https://github.com/webiny/webiny-js"}
-                        >
-                            GitHub
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" rel={"noreferrer"} href={"https://www.webiny.com/slack"}>
-                            Community Slack
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div className={props.className}>
-                <img alt={"Webiny"} className={"transparent-bg"} src={transparentBackground} />
-                <div className={"inner"}>{props.children}</div>
-            </div>
-        </div>
+        <Image
+            width={200}
+            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+        />
     );
 }
+
+const Layout: React.FC<Props> = props => {
+    return (
+        <div className="layout">
+            {/* We're using the `nav` tag for rendering the header. */}
+            <nav>
+                <div>
+                    <Link to={"/"}>
+                        <img src={logo} className="logo" alt={"Webiny Store"} />
+                    </Link>
+                </div>
+                <div>{/* This is where we'll add the New Pin and User Menu buttons. */}</div>
+            </nav>
+            <Divider style={{ margin: 0 }} />
+
+            {/* The pages are rendered within the `main` tag. */}
+            <main className={props.className}>{props.children}</main>
+        </div>
+    );
+};
+
+export default Layout;
