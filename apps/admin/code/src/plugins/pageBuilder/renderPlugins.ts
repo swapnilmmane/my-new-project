@@ -35,6 +35,9 @@ import visibility from "@webiny/app-page-builder/render/plugins/elementSettings/
 // Responsive mode
 import responsiveMode from "@webiny/app-page-builder/render/plugins/responsiveMode";
 
+// Import the `iframe` element
+import iframeElement from "@extensions/pb-element-iframe/render";
+
 export default [
     // Elements
     document(),
@@ -70,5 +73,7 @@ export default [
     margin,
     textSetting,
     visibility,
-    responsiveMode()
+    responsiveMode(),
+    
+    iframeElement()
 ];

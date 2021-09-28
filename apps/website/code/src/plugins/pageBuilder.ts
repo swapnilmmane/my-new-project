@@ -30,6 +30,7 @@ import twitter from "@webiny/app-page-builder/render/plugins/elements/embeds/twi
 import pinterest from "@webiny/app-page-builder/render/plugins/elements/embeds/pinterest";
 import pagesList from "@webiny/app-page-builder/render/plugins/elements/pagesList";
 import imagesList from "@webiny/app-page-builder/render/plugins/elements/imagesList";
+import iframeElement from "@extensions/pb-element-iframe/render";
 
 /**
  * Page settings plugins (seo, social, etc.).
@@ -94,5 +95,7 @@ export default [
     margin,
     textSetting,
     visibility,
-    responsiveMode()
+    responsiveMode(),
+    iframeElement()
+    
 ];

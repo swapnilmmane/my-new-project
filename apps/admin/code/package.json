@@ -8,6 +8,7 @@
 		"@editorjs/list": "^1.6.0",
 		"@editorjs/quote": "^2.4.0",
 		"@editorjs/underline": "^1.0.0",
+		"@extensions/pb-element-iframe": "^1.0.0",
 		"@types/react": "^16.14.2",
 		"@webiny/app": "5.14.0",
 		"@webiny/app-admin": "5.14.0",

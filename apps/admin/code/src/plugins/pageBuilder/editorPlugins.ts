@@ -72,6 +72,8 @@ import { gridPresets } from "@webiny/app-page-builder/editor/plugins/gridPresets
 // event actions
 import actionPlugins from "@webiny/app-page-builder/editor/recoil/actions/plugins";
 
+import iframeElement, { iframeSettings } from "@extensions/pb-element-iframe/admin";
+
 export default [
     contentBackground,
     blockEditing,
@@ -145,5 +147,7 @@ export default [
     // Breadcrumbs
     breadcrumbs,
     // action registration
-    actionPlugins()
+    actionPlugins(),
+    iframeElement(),
+    iframeSettings
 ];
