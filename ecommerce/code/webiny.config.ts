@@ -4,7 +4,7 @@ import { getStackOutput } from "@webiny/cli-plugin-deploy-pulumi/utils";
 
 const MAP = {
     REACT_APP_GRAPHQL_API_URL: "${apiUrl}/graphql",
-    REACT_APP_API_URL: "${apiUrl}"
+    REACT_APP_CMS_API_URL: "${apiUrl}"
 };
 
 const NO_API_MESSAGE = env => {
@@ -22,9 +22,9 @@ export default {
             // Starts local application development.
             const output = await getStackOutput("api", options.env, MAP);
             invariant(output, NO_API_MESSAGE(options.env));
+            Object.assign(process.env, getStackOutput("api", options.env, MAP));
             
             await startApp(options, context);
-            
         },
         async build(options, context) {
             // Creates a production build of your application, ready to be deployed to
@@ -32,6 +32,7 @@ export default {
             
             const output = await getStackOutput("api", options.env, MAP);
             invariant(output, NO_API_MESSAGE(options.env));
+            Object.assign(process.env, getStackOutput("api", options.env, MAP));
             
             await buildApp(options, context);
         }

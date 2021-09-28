@@ -12,8 +12,10 @@ import "antd/dist/antd.css";
 // If needed, feel free to add new or modify existing providers.
 export const App = () => (
     <>
-        {/* Sets up a new Apollo GraphQL client, pointed to an existing GraphQL API. */}
-        <ApolloProvider client={createApolloClient({ uri: 'https://dfu7yhjigq155.cloudfront.net/graphql'})}> 
+        {/* Sets up a new Apollo GraphQL client, pointed to an existing GraphQL API. 
+        <ApolloProvider client={createApolloClient({ uri: process.env.REACT_APP_GRAPHQL_API_URL })}>
+        */}
+        <ApolloProvider client={createApolloClient({ uri: process.env.REACT_APP_CMS_API_URL + '/cms/read/en-US'})}> 
             {/* Enables routing in our application. */}
             <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Routes />

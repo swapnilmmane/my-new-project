@@ -7,9 +7,9 @@ import gql from "graphql-tag";
 import Columned from "react-columned";
 import Layout from "~/components/Layout";
 import blankImage from "~/images/blankImage.png";
-
+/*
 const LIST_PRODUCTS = gql`
-    query security {
+    query { security {
     listUsers {
       data {
         login
@@ -17,7 +17,20 @@ const LIST_PRODUCTS = gql`
         createdOn
       }
     }
+    }
   }
+`;*/
+
+const LIST_PRODUCTS = gql`
+    query {
+        listContentModels {
+            data {
+            name
+            modelId
+            }
+        }
+    }
+
 `;
 
 // The home page.
