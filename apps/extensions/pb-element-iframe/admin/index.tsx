@@ -3,9 +3,7 @@ import styled from "@emotion/styled";
 import { PbEditorPageElementPlugin, DisplayMode } from "@webiny/app-page-builder/types";
 import { createInitialPerDeviceSettingValue } from "@webiny/app-page-builder/editor/plugins/elementSettings/elementSettingsUtils";
 
-// import { ReactComponent as IFrameIcon } from "./assets/iframe-icon.svg";
-const IFrameIcon: React.FunctionComponent = () => <i>icon</i>;
-
+import { ReactComponent as IFrameIcon } from "./assets/iframe-icon.svg";
 import IframeEditor from "./components/iframeEditor";
 
 const PreviewBox = styled("div")({
