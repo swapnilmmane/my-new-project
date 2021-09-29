@@ -4,12 +4,17 @@ import { getStackOutput } from "@webiny/cli-plugin-deploy-pulumi/utils";
 
 const MAP = {
     REACT_APP_GRAPHQL_API_URL: "${apiUrl}/graphql",
-    REACT_APP_CMS_API_URL: "${apiUrl}"
+    REACT_APP_CMS_API_URL: "${apiUrl}",
+    REACT_APP_API_URL: "${apiUrl}"
 };
 
 const NO_API_MESSAGE = env => {
     return `It seems that the API project application isn't deployed!\nBefore continuing, please deploy it by running the following command: yarn webiny deploy api --env=${env}`;
 };
+
+// Instead of hard-coding it here, this can be loaded, for example, using the `dotenv` package.
+// @see https://www.npmjs.com/package/dotenv
+const CMS_API_TOKEN = "a0e2c84c62df2838e45927a31655f99c700ea98111cb0275";
 
 // Exports fundamental watch and build commands.
 // Need to inject environment variables or link your application with an existing GraphQL API?
@@ -24,6 +29,9 @@ export default {
             invariant(output, NO_API_MESSAGE(options.env));
             Object.assign(process.env, getStackOutput("api", options.env, MAP));
             
+            // Add CMS_API_TOKEN to process.env.
+            process.env.REACT_APP_CMS_API_TOKEN = CMS_API_TOKEN;
+
             await startApp(options, context);
         },
         async build(options, context) {
@@ -33,6 +41,9 @@ export default {
             const output = await getStackOutput("api", options.env, MAP);
             invariant(output, NO_API_MESSAGE(options.env));
             Object.assign(process.env, getStackOutput("api", options.env, MAP));
+            
+            // Add CMS_API_TOKEN to process.env.
+            process.env.REACT_APP_CMS_API_TOKEN = CMS_API_TOKEN;
             
             await buildApp(options, context);
         }

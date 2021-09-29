@@ -2,7 +2,8 @@ import React from "react";
 import { RoutePlugin } from "@webiny/app/plugins/RoutePlugin";
 import { Link, Route } from "@webiny/react-router";
 import { Empty } from "antd";
-import { useQuery } from "@apollo/react-hooks";
+// import { useQuery } from "@apollo/react-hooks";
+import { useQuery } from "~/components/apollo/cms/read";
 import gql from "graphql-tag";
 import Columned from "react-columned";
 import Layout from "~/components/Layout";
@@ -21,6 +22,8 @@ const LIST_PRODUCTS = gql`
   }
 `;*/
 
+const CMS_API_TOKEN = process.env.REACT_APP_CMS_API_TOKEN;
+
 const LIST_PRODUCTS = gql`
     query {
         listContentModels {
@@ -36,6 +39,7 @@ const LIST_PRODUCTS = gql`
 // The home page.
 const Home: React.FC = () => {
     const listProductsQuery = useQuery(LIST_PRODUCTS);
+    console.log("===== 42 CMS_API_TOKEN", CMS_API_TOKEN);
     console.log("===== 25 listProductsQuery" , listProductsQuery);
     const { data = [] } = listProductsQuery?.data || {};
 

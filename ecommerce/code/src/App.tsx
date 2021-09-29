@@ -15,11 +15,11 @@ export const App = () => (
         {/* Sets up a new Apollo GraphQL client, pointed to an existing GraphQL API. 
         <ApolloProvider client={createApolloClient({ uri: process.env.REACT_APP_GRAPHQL_API_URL })}>
         */}
-        <ApolloProvider client={createApolloClient({ uri: process.env.REACT_APP_CMS_API_URL + '/cms/read/en-US'})}> 
+        {/* <    client={createApolloClient({ uri: process.env.REACT_APP_CMS_API_URL + '/cms/read/en-US'})}>  */}
             {/* Enables routing in our application. */}
             <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Routes />
             </BrowserRouter>
-        </ApolloProvider>
+        {/* </ApolloProvider> */}
     </>
 );
