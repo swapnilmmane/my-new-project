@@ -45,9 +45,9 @@ export const handler = createHandler({
         headlessCmsPlugins({ debug }),
         headlessCmsDynamoDbElasticStorageOperation(),
         scaffoldsPlugins(),
-        elasticsearchDataGzipCompression()
-        // addressFieldPlugin()
-        // addressFieldStoragePlugin(),
+        elasticsearchDataGzipCompression(),
+        addressFieldPlugin(),
+        addressFieldStoragePlugin(),
         // addressFieldIndexPlugin()
     ],
     http: { debug }

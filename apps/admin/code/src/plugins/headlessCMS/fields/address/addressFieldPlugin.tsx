@@ -1,9 +1,9 @@
 import React from "react";
-import { CmsEditorFieldTypePlugin } from "@webiny/app-headless-cms/types";
+import {CmsEditorFieldTypePlugin} from "@webiny/app-headless-cms/types";
 
-const AddressIcon: React.FunctionComponent = () => <i>icon</i>;
+const AddressIcon: React.FunctionComponent = () => (<i>icon</i>);
 
-export default (): CmsEditorFieldTypePlugin => ({
+export default(): CmsEditorFieldTypePlugin => ({
     type: "cms-editor-field-type",
     name: "cms-editor-field-type-address",
     field: {

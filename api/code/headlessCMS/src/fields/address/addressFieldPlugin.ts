@@ -1,6 +1,7 @@
-import { CmsModelFieldToGraphQLPlugin } from "@webiny/api-headless-cms/types";
+import {CmsModelFieldToGraphQLPlugin} from "@webiny/api-headless-cms/types";
 
-export default (): CmsModelFieldToGraphQLPlugin => ({
+
+export default(): CmsModelFieldToGraphQLPlugin => ({
     type: "cms-model-field-to-graphql",
     name: "cms-model-field-to-graphql-address",
     fieldType: "address",
@@ -33,8 +34,8 @@ export default (): CmsModelFieldToGraphQLPlugin => ({
                 if (!value) {
                     return {};
                 }
-                const { address, coordinates } = value;
-                const { country, city, zipCode, street, streetNumber } = address;
+                const {address, coordinates} = value;
+                const {country, city, zipCode, street, streetNumber} = address;
                 return {
                     country,
                     city,

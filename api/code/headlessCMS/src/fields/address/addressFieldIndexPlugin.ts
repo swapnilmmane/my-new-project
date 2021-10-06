@@ -1,14 +1,11 @@
-import { CmsModelFieldToElasticsearchPlugin } from "@webiny/api-headless-cms-ddb-es/types";
+import { CmsModelFieldToElasticsearchPlugin } from "@webiny/api-headless-cms-ddb-es/types"; 
 
 export default (): CmsModelFieldToElasticsearchPlugin => ({
     type: "cms-model-field-to-elastic-search",
     name: "cms-model-field-to-elastic-search-address",
-    fieldType: "address"
-
-    // toIndex and fromIndex is giving error thus commenting it
-
+    fieldType: "address",
     /*
-    toIndex({ field, toIndexEntry }) {
+    toIndex({field, toIndexEntry}) {
         const values = toIndexEntry.values;
         const value = values[field.fieldId];
         delete values[field.fieldId];
