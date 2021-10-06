@@ -16,9 +16,9 @@ import elasticsearchDataGzipCompression from "@webiny/api-elasticsearch/plugins/
 // Imports plugins created via scaffolding utilities.
 import scaffoldsPlugins from "./plugins/scaffolds";
 
-import addressFieldPlugin from "./plugins/custom-field/address/addressFieldPlugin";
-import addressFieldStoragePlugin from "./plugins/custom-field/address/addressFieldStoragePlugin";
-import addressFieldIndexPlugin from "./plugins/custom-field/address/addressFieldIndexPlugin";
+import addressFieldPlugin from "./fields/address/addressFieldPlugin";
+import addressFieldStoragePlugin from "./fields/address/addressFieldStoragePlugin";
+import addressFieldIndexPlugin from "./fields/address/addressFieldIndexPlugin";
 
 const debug = process.env.DEBUG === "true";
 
