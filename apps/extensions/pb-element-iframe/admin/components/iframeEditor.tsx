@@ -2,10 +2,7 @@ import React from "react";
 import { css } from "emotion";
 import styled from "@emotion/styled";
 import { ElementRoot } from "@webiny/app-page-builder/render/components/ElementRoot";
-// @Ashu, best practice for Icon
-// import { ReactComponent as IFrameIcon } from "../assets/iframe-icon.svg";
-const IFrameIcon: React.FunctionComponent = () => <i>icon</i>;
-
+import { ReactComponent as IFrameIcon } from "../assets/iframe-icon.svg";
 
 const outerWrapper = css({
     boxSizing: "border-box"

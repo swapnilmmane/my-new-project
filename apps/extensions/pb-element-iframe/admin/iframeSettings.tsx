@@ -23,7 +23,6 @@ export default {
                     </Bind>
                     <Grid className={classes.simpleGrid}>
                         <Cell span={12}>
-                            {/* @Ashu,why ts-ignore here */}
                             {/*  @ts-ignore */}
                             <ButtonContainer>
                                 {/*  @ts-ignore */}
