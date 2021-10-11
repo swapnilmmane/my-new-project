@@ -1,7 +1,7 @@
 import React from "react";
 import {CmsEditorFieldRendererPlugin} from "@webiny/app-headless-cms/types";
 
-const AddressSearch = () => (<input/>);
+const AddressSearch = ({ value, onChange }) => (<input value={value} onChange={e => onChange(e.target.value)} />);
 
 export default(): CmsEditorFieldRendererPlugin => ({
     type: "cms-editor-field-renderer",
