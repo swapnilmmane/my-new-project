@@ -7883,6 +7883,7 @@ __metadata:
     "@webiny/handler-http": 5.14.0
     "@webiny/handler-logs": 5.14.0
     "@webiny/project-utils": 5.14.0
+    cryptr: ^6.0.2
   languageName: unknown
   linkType: soft
 
@@ -10641,6 +10642,13 @@ __metadata:
   version: 4.1.1
   resolution: "crypto-js@npm:4.1.1"
   checksum: b3747c12ee3a7632fab3b3e171ea50f78b182545f0714f6d3e7e2858385f0f4101a15f2517e033802ce9d12ba50a391575ff4638c9de3dd9b2c4bc47768d5425
+  languageName: node
+  linkType: hard
+
+"cryptr@npm:^6.0.2":
+  version: 6.0.2
+  resolution: "cryptr@npm:6.0.2"
+  checksum: 309b4b40a6c69f337e73ef399ddc85689dfda51817beef47c4d1579db3cc3e067b1dfc97d05a8bc1364f222255dd63757cc3e4a780725c8638448055f6e549df
   languageName: node
   linkType: hard
 
@@ -24327,35 +24335,6 @@ resolve@^2.0.0-next.3:
   checksum: 3b34a3d77165a2cb82b34014b3aba93b1c4637a5011807557dc2f3da826c59975a5ccad765721c4648b39817e3472789f9b0fa98fc854c5c1c7a1e632aacdc28
   languageName: node
   linkType: hard
-
-"testreactapp@workspace:testreactapp/code":
-  version: 0.0.0-use.local
-  resolution: "testreactapp@workspace:testreactapp/code"
-  dependencies:
-    "@apollo/react-components": ^3.1.5
-    "@types/react": ^16.14.2
-    "@webiny/app": ^5.14.0
-    "@webiny/cli": ^5.14.0
-    "@webiny/cli-plugin-deploy-pulumi": ^5.14.0
-    "@webiny/plugins": ^5.14.0
-    "@webiny/project-utils": ^5.14.0
-    "@webiny/react-router": ^5.14.0
-    apollo-cache: ^1.3.5
-    apollo-cache-inmemory: ^1.6.6
-    apollo-client: ^2.2.8
-    apollo-link: ^1.2.14
-    apollo-link-batch-http: ^1.2.14
-    apollo-utilities: ^1.3.4
-    core-js: ^3.0.1
-    cross-env: ^5.0.2
-    cross-fetch: ^3.0.4
-    graphql-tag: ^2.10.1
-    invariant: ^2.2.4
-    react: ^16.14.0
-    react-dom: ^16.14.0
-    regenerator-runtime: ^0.13.5
-  languageName: unknown
-  linkType: soft
 
 "text-table@npm:0.2.0, text-table@npm:^0.2.0":
   version: 0.2.0

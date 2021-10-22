@@ -59,6 +59,9 @@ import richTextEditor from "./headlessCMS/richTextEditor";
 import addressFieldPlugin from "./headlessCMS/fields/address/addressFieldPlugin";
 import addressFieldRendererPlugin from "./headlessCMS/fields/address/addressFieldRendererPlugin";
 
+import secretTextFieldPlugin from "./headlessCMS/fields/secretText/secretTextFieldPlugin"
+import secretTextFieldRendererPlugin from "./headlessCMS/fields/secretText/secretTextFieldRendererPlugin";
+
 export default [
     headlessCmsPlugins(),
     richTextEditor,
@@ -112,6 +115,8 @@ export default [
     welcomeScreenWidget,
     objectField,
     objectFieldRenderer,
-    addressFieldPlugin(),
-    addressFieldRendererPlugin()
+    // addressFieldPlugin(),
+    // addressFieldRendererPlugin(),
+    secretTextFieldPlugin(),
+    secretTextFieldRendererPlugin()
 ];

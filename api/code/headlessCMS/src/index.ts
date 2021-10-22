@@ -20,6 +20,10 @@ import addressFieldPlugin from "./fields/address/addressFieldPlugin";
 import addressFieldStoragePlugin from "./fields/address/addressFieldStoragePlugin";
 import addressFieldIndexPlugin from "./fields/address/addressFieldIndexPlugin";
 
+import secretTextFieldPlugin from "./fields/secretText/secretTextFieldPlugin"
+import secretTextFieldStoragePlugin from "./fields/secretText/secretTextFieldStoragePlugin";
+
+
 const debug = process.env.DEBUG === "true";
 
 export const handler = createHandler({
@@ -46,9 +50,13 @@ export const handler = createHandler({
         headlessCmsDynamoDbElasticStorageOperation(),
         scaffoldsPlugins(),
         elasticsearchDataGzipCompression(),
-        addressFieldPlugin(),
-        addressFieldStoragePlugin(),
-        // addressFieldIndexPlugin()
+        //addressFieldPlugin(),
+        // addressFieldStoragePlugin(),
+        // addressFieldIndexPlugin(),
+        secretTextFieldPlugin,
+        secretTextFieldStoragePlugin()
+        
+        
     ],
     http: { debug }
 });

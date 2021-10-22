@@ -26,6 +26,7 @@
 		"@webiny/handler-db": "5.14.0",
 		"@webiny/handler-http": "5.14.0",
 		"@webiny/handler-logs": "5.14.0",
-		"@webiny/project-utils": "5.14.0"
+		"@webiny/project-utils": "5.14.0",
+		"cryptr": "^6.0.2"
 	}
 }
