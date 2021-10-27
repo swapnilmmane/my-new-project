@@ -23,6 +23,8 @@ import elasticsearchDataGzipCompression from "@webiny/api-elasticsearch/plugins/
 
 // Imports plugins created via scaffolding utilities.
 import scaffoldsPlugins from "./plugins/scaffolds";
+import pageBuilderDynamoDbElasticsearchPlugins from "@webiny/api-page-builder-so-ddb-es";
+import pageBuilderPrerenderingPlugins from "@webiny/api-page-builder/prerendering";
 
 const debug = process.env.DEBUG === "true";
 
@@ -67,7 +69,9 @@ export const handler = createHandler({
         headlessCmsPlugins(),
         headlessCmsDynamoDbElasticStorageOperation(),
         scaffoldsPlugins(),
-        elasticsearchDataGzipCompression()
+        elasticsearchDataGzipCompression(),
+        pageBuilderDynamoDbElasticsearchPlugins(),
+        pageBuilderPrerenderingPlugins()
     ],
     http: { debug }
 });

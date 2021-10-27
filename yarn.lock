@@ -5932,6 +5932,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@webiny/api-page-builder-so-ddb-es@npm:5.15.0":
+  version: 5.15.0
+  resolution: "@webiny/api-page-builder-so-ddb-es@npm:5.15.0"
+  dependencies:
+    "@babel/runtime": 7.15.3
+    "@webiny/api-elasticsearch": 5.15.0
+    "@webiny/api-page-builder": 5.15.0
+    "@webiny/api-upgrade": 5.15.0
+    "@webiny/db-dynamodb": 5.15.0
+    "@webiny/error": 5.15.0
+    "@webiny/handler-db": 5.15.0
+    "@webiny/plugins": 5.15.0
+    dataloader: 2.0.0
+    dynamodb-toolbox: 0.3.4
+    elastic-ts: 0.7.0
+    lodash: 4.17.21
+  checksum: 82011cfa2ae70bdd12e3d033f0ad8751a00e9bf6f5d931f503930d576b91045ac9f8a16a359d088483f1b35459a307dc324aeb1ca9d039dcd6343fd24d030ace
+  languageName: node
+  linkType: hard
+
 "@webiny/api-page-builder@npm:5.15.0":
   version: 5.15.0
   resolution: "@webiny/api-page-builder@npm:5.15.0"
@@ -7848,6 +7868,7 @@ __metadata:
     "@webiny/api-i18n-content": 5.15.0
     "@webiny/api-i18n-ddb": 5.15.0
     "@webiny/api-page-builder": 5.15.0
+    "@webiny/api-page-builder-so-ddb-es": 5.15.0
     "@webiny/api-prerendering-service": 5.15.0
     "@webiny/api-security": 5.15.0
     "@webiny/api-security-admin-users": 5.15.0
@@ -7904,6 +7925,7 @@ __metadata:
   resolution: "api-page-builder-update-settings@workspace:api/code/pageBuilder/updateSettings"
   dependencies:
     "@webiny/api-page-builder": 5.15.0
+    "@webiny/api-page-builder-so-ddb-es": 5.15.0
     "@webiny/cli": 5.15.0
     "@webiny/db-dynamodb": 5.15.0
     "@webiny/handler-aws": 5.15.0
