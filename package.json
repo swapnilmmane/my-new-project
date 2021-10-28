@@ -65,7 +65,6 @@
 			"api/code/fileManager/*",
 			"api/code/graphql",
 			"api/code/headlessCMS",
-			"api/code/pageBuilder/*",
 			"api/code/prerenderingService/render",
 			"api/code/prerenderingService/flush",
 			"api/code/prerenderingService/queue/*",
@@ -75,7 +74,10 @@
 			"my-full-stack-application/api/code/graphql",
 			"my-full-stack-application/app/code",
 			"testreactapp/code",
-			"apps/extensions/pb-element-iframe"
+			"apps/extensions/pb-element-iframe",
+			"api/code/pageBuilder/updateSettings",
+			"api/code/pageBuilder/importPages/*",
+			"api/code/pageBuilder/exportPages/*"
 		]
 	},
 	"scripts": {
