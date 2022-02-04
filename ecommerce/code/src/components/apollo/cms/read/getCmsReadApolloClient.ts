@@ -10,7 +10,7 @@ const CMS_API_TOKEN = process.env.REACT_APP_CMS_API_TOKEN;
 let client;
 
 export default () => {
-    console.log("===== 13")
+    console.log("====== 13")
     if (client) {
         return client;
     }
@@ -33,7 +33,7 @@ export default () => {
 
     const authLink = new ApolloLink((operation, forward) => {
         // Use the setContext method to set the HTTP headers.
-        console.log("==== 36 adding the API token ", CMS_API_TOKEN);
+        console.log("===== 36 adding the API token ", CMS_API_TOKEN);
         operation.setContext({
             headers: {
                 authorization: `Bearer ${CMS_API_TOKEN}`
