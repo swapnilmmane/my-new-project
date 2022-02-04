@@ -13,7 +13,7 @@ const NO_API_MESSAGE = env => {
 };
 
 // Instead of hard-coding it here, this can be loaded, for example, using the `dotenv` package.
-// @see https://www.npmjs.com/package/dotenv
+// @see https://www.npmjs.com/package/dotenv 
 const CMS_API_TOKEN = "<your CMS API Token>";
 
 // Exports fundamental watch and build commands.
