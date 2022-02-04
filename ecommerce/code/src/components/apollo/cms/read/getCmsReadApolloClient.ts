@@ -37,7 +37,6 @@ export default () => {
         operation.setContext({
             headers: {
                 authorization: `Bearer ${CMS_API_TOKEN}`
-                // authorization: "a0e2c84c62df2838e45927a31655f99c700ea98111cb0275"
             }
         });
 
