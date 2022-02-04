@@ -4,7 +4,7 @@ import { BatchHttpLink } from "apollo-link-batch-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { plugins } from "@webiny/plugins";
 
-// Loaded in apps/website/code/webiny.config.js.
+// Loaded in ecommerce/code/webiny.config.ts.
 const CMS_API_TOKEN = process.env.REACT_APP_CMS_API_TOKEN;
 
 let client;
